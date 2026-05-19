@@ -1,6 +1,6 @@
 Name:          sbc
 Version:       2.0
-Release:       6%{?dist}
+Release:       7%{?dist}
 Summary:       Sub Band Codec used by bluetooth A2DP
 
 License:       GPL-2.0-only AND LGPL-2.1-or-later
@@ -65,6 +65,10 @@ find %{buildroot} -type f -name "*.la" -delete
 %{_libdir}/libsbc.so
 
 %changelog
+* Mon Dec 1 2025 Tomas Pelka <tpelka@redhat.com> - 2.0-7
+- Bump release to address sbc-devel inclusion to CRB
+  Resolves: RHEL-105436
+
 * Tue Oct 29 2024 Troy Dawson <tdawson@redhat.com> - 2.0-6
 - Bump release for October 2024 mass rebuild:
   Resolves: RHEL-64018
